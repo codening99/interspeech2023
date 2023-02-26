@@ -22,4 +22,4 @@ pretrain_expert:
     max_timestep: -200 # Max length for audio feature (0 for no restriction, negative value to set minimum timestep)
     libri_root: '/home/LiuruiGrp/2022mzn/model/interspeech2023/ESDcorpus' # If raw libri data is provided, use on-the-fly feature extraction, else use the pre-extracted features under `file_path`
     file_path: 'data/len_for_bucket' # Pre-extracted features path. When using on-the-fly feature extraction, this is used to provide length for bucketing.
-    sets: ['0011'] # can be the subset of ['train-clean-100', 'train-clean-360', 'train-other-500']
+    sets: ['english] # can be the subset of ['train-clean-100', 'train-clean-360', 'train-other-500']

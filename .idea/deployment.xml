@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" autoUpload="Always" serverName="s3prl" remoteFilesAllowedToDisappearOnAutoupload="false" confirmBeforeUploading="false">
+  <component name="PublishConfigData" autoUpload="Always" serverName="mazening@183.175.12.112:22 password" remoteFilesAllowedToDisappearOnAutoupload="false" confirmBeforeUploading="false">
     <option name="confirmBeforeUploading" value="false" />
     <serverData>
       <paths name="2022mzn@183.175.12.82:22">
@@ -20,7 +20,7 @@
       <paths name="mazening@183.175.12.112:22 password">
         <serverdata>
           <mappings>
-            <mapping deploy="/tmp/pycharm_project_393" local="$PROJECT_DIR$" />
+            <mapping deploy="/sdc/home/mazening/model/interspeech2023" local="$PROJECT_DIR$" />
           </mappings>
         </serverdata>
       </paths>

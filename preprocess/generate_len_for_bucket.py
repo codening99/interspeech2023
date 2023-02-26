@@ -86,8 +86,9 @@ def generate_length(args, tr_set, audio_extension):
 
         # Dump data
         df = pd.DataFrame(
-            data={'file_path': [fp for fp in sorted_todo], 'length': list(reversed(sorted(tr_x))), 'label': None})
-                  # 'score': [score for score in sorted_score], 'label': None})
+            data={'file_path': [fp.replace('english/', '') for fp in sorted_todo], 'length': list(reversed(sorted(tr_x))), 'label': None})
+
+        # 'score': [score for score in sorted_score], 'label': None})
 
         df.to_csv(os.path.join(output_dir, tr_set[i] + '.csv'))
 
@@ -102,7 +103,7 @@ def main():
     args = get_preprocess_args()
 
     if 'esdcorpus' in args.input_data.lower():
-        SETS = ['0011']
+        SETS = ['english']
     else:
         raise NotImplementedError
 
